@@ -1420,42 +1420,202 @@ p{
 }
 
 
-@media all and (min-width: 992px) and (max-width:1199px) {
+@media all and (min-width: 992px) and (max-width:1280px) {
     .citrus-slider-banner-content {
-    position: absolute;
-    top: 0;
-    /* padding-top: 110px; */
-    /* width: 93%; */
-    height: 100%;
-    /* padding-bottom: 115px; */
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    right: 0;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
-}
-}
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-
-@media all and (max-width: 1300px) {
- .citrus-slider-banner-content {
-        width: 90%;
+    .citrus-slider-single-item2 .citrus-banner-middle-content-inner > img {
+        width: 200px;
+        height: 132px;
+    }
+    .citrus-banner-inner-right.citrus-banner-inner-right2 {
+        width: 52%;
+        padding-left: 15px;
+    }
+    .citrus-banner-inner-right > h2, .citrus-innx-content > h2 {
+        font-size: 30px;
     }
 
 }
 
-@media all and (min-width: 1281px) and (max-width:1440px) {
+
+@media all and (max-width: 1301px) {
+ .citrus-slider-banner-content {
+        width: 90%;
+    }
+    .citrus-meet-orijen-tab-container {
+        width: 90%;
+    }
+    .citrus-noramg-container {
+        width: 90%;
+    }
+    .citrus-organs-container {
+        width: 90%;
+    }
+    .citrus-wet-cat-container {
+        width: 90%;
+    }
+    .citrus-transitioning-container {
+        width: 90%;
+    }
+    .citrus_item_section__tab_content_item {
+        max-width: 210px;
+    }
+    .citrus-wet-single-item {
+        flex: 0 0 150px;
+    }
+    .citrus-wet-single-item > a > img {
+        width: 115px;
+    }
+    .citrus-wet-single-item > p {
+        height: 170px;
+    }
 
 }
 
+
+
 @media all and (max-width: 1280px) {
+    .citrus-meet-orijen-wrapper {
+    overflow-y: auto;
+}
+
+.citrus-meet-orijen-main21 {
+    width: 280%;
+}
+.citrus_meet_tab_item {
+
+    width: 72%;
+}
  
 }
 
 @media all and (max-width: 991px) {
+    .citrus-slider-single-item > img {
+        width: 100%;
+        height: 300px;
+    }
+    .citrus-slider-banner-content {
+        padding-top: 0px; 
+        padding-bottom: 0px; 
+        align-items: center;
+    }
+    .citrus-slider-single-item2 .citrus-banner-middle-content-inner > img {
+        width: 180px;
+        height: 115px;
+    }
+    .citrus-banner-inner-right.citrus-banner-inner-right2 {
+        width: 50%;
+    }
+
+    .citrus-banner-inner-right > h2, .citrus-innx-content > h2 {
+        font-size: 20px;
+    }
+    .citrus-banner-middle-content-inner > img, .citrus-banner-inner-right2 > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .citrus-main-nourish-flex {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .citrus-mm-content {
+        margin-top: -50px;
+    }
+    .citrus-nourish-left {
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .citrus-nourish-right {
+        margin-left: 0px;
+        flex: 0 0 100%;
+    }
+
+    .citrus-nourish-right > iframe {
+        height: 400px;
+        width: 100%;
+    }
+    .citrus-nourish-area {
+        padding-bottom: 40px;
+    }
+    .citrus-orgins-main-flex {
+        flex-wrap: wrap;
+    }
+    .citrus-orgins-left {
+        flex: 0 0 100%;
+    }
+    .citrus-orgins-right {
+        flex: 0 0 100%;
+        padding-left: 0px;
+        overflow: hidden;
+        padding-top: 25px;
+    }
+
+    .citrus-bg-img {
+        padding: 0px 0px 0px 20px;
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        transform: translateY(-40%);
+    }
+    .citrus-bdr {
+        width: 275px;
+    }
+    .citrus-bdr.citrus-bdr2 {
+        width: 255px;
+    }
+    .citrus-organs-container {
+        width: 82%;
+    }
+    .citrus-wet-cat-main-flex {
+        flex-wrap: wrap;
+    }
+    .citrus-wet-cat-left {
+        flex: 0 0 100%;
+        margin-left: 0px;
+        padding-bottom: 55px;
+    }
+    .citrus-wet-cat-right {
+        flex: 0 0 100%;
+        padding-left: 0px;
+    }
+    .citrus-wet-cat-carocel {
+        display: flex;
+        overflow-y: auto;
+    }
+    .citrus-wet-single-item {
+        flex: 0 0 60%;
+    }
+    .citrus-transitioning-main-flex {
+        flex-wrap: wrap;
+    }
+    .citrus-transitioning-left {
+        flex: 0 0 100%;
+        padding-right: 0px;
+    }
+    .citrus-transitioning-right {
+        flex: 0 0 100%;
+        padding-left: 0px;
+    }
+    .citrus-btm-main-overly {
+        max-width: 500px;
+    }
+    .citrus-btm-main-overly > h4 {
+        font-size: 15px;
+        padding-bottom: 14px;
+    }
+    .citrus-btm-main-overly > p {
+        width: 53%;
+        text-align: center;
+    }
+
 
 }
 
