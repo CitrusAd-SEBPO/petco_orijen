@@ -239,11 +239,6 @@ a:hover {
     overflow: hidden !important;
 }
 
-/*.citrus-slider-conteiner {
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-}*/
 
 .citrus-noramg-container{
     max-width: 1100px;
@@ -552,6 +547,135 @@ a:hover {
 /**************************************/
 /************ Header  Area*************/
 /************************************/
+     .citrus-orijien-section__slider {
+            overflow: hidden;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+        }
+
+         .citrus-orijien-section__slider input {
+            display: none;
+        }
+
+         .citrus_splide_banner_orijin {
+            width: 200%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+          .citrus_orijinSlide {
+            min-width: 100%;
+            transition: 2s;
+            -webkit-transition: 2s;
+        }
+
+
+
+ /****slider styles****/
+       
+     
+      
+
+    /* Manual navigation */
+    .citrus_orijin-navigation-manual{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        padding: 10px 0 10px 25px;
+        width: 100px;
+        left: 45%;
+    }
+
+    .citrus_orijin-manual-btn{
+        padding : 8px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+
+    }
+
+    .citrus_orijin-manual-btn:not(:last-child){
+        margin-right: 10px;
+    }
+
+
+    #radio1:checked ~ .citrus_splidefirst{
+        margin-left : 0;
+    }
+    #radio2:checked ~ .citrus_splidefirst{
+        margin-left : -100%;
+    }
+    #radio3:checked ~ .citrus_splidefirst{
+        margin-left : -200%;
+    }
+
+   .citrus_orijin-navigation-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    background: transparent;
+    padding: 10px 0 10px 25px;
+    width: 100px;
+    left: 45%;
+    border-radius: 5px 5px 0 0;
+}
+
+    .citrus_orijin-navigation-auto div {
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+    background: #B1B1B1;
+}
+
+    .citrus_orijin-navigation-auto div:not(:last-child){
+        margin-right: 10px;
+    }
+
+    #radio1:checked ~ .citrus_orijin-navigation-auto .auto-btn1{
+        background: #fff;
+    }
+    #radio2:checked ~ .citrus_orijin-navigation-auto .auto-btn2{
+        background: #fff;
+    }
+    #radio3:checked ~ .citrus_orijin-navigation-auto .auto-btn3{
+        background: #fff;
+    }
+
+        /****slider styles****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .citrus-banner-area{
     overflow: hidden;
     position: relative;
@@ -799,8 +923,8 @@ a:hover {
         }
 
         .citrus_item_section__tab_content_item {
-            max-width: 190px;
-            width: 100%;
+            max-width: 195px;
+            width: 100% !important;
             margin: 0px 11px;
         }
 
@@ -813,9 +937,9 @@ a:hover {
             opacity: 0;   
         }
 
-        .cirtus_meet_tabs_main_22_hide_arrow .splide__arrows{
+       /* .cirtus_meet_tabs_main_22_hide_arrow .splide__arrows{
             display: none;
-        }
+        }*/
 
         .cirtus_meet_tabs_main_22 .splide__pagination {
             display: none;
@@ -824,7 +948,7 @@ a:hover {
         .citrus_product_info22 > p {
             font-size: 13px;
             color: #333333;
-            min-height: 92px;
+            min-height: 82px;
             display: block;
             margin-top: 18px;
         }
@@ -891,8 +1015,12 @@ a:hover {
 }
 .citrus-nourish-right {
     margin-left: 10px;
+    flex: 0 0 50%;
 }
-
+.citrus-nourish-right > iframe {
+    height: 100%;
+    width: 100%;
+}
 .citrus-common-header > h2 {
     color: #000000;
     font-size: 25px;
@@ -1291,8 +1419,31 @@ p{
     }
 }
 
-@media all and (min-width: 1440px) {
- 
+
+@media all and (min-width: 992px) and (max-width:1199px) {
+    .citrus-slider-banner-content {
+    position: absolute;
+    top: 0;
+    /* padding-top: 110px; */
+    /* width: 93%; */
+    height: 100%;
+    /* padding-bottom: 115px; */
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+
+@media all and (max-width: 1300px) {
+ .citrus-slider-banner-content {
+        width: 90%;
+    }
 
 }
 

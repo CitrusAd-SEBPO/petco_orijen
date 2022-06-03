@@ -22,17 +22,22 @@
         <![endif]-->
 
         <div class="citrus-all-overflow">
+
             <!--===============================================================
                                 start banner area
        ====================================================================-->
             <section class="citrus-banner-area">
                 <div class="citrus-slideshow-container">
                     <div class="citrus-banner-slider-desktop-view">
+                        <div class="citrus-orijien-section__slider">
                         <div class="citrus-slider-items citrus_splide_banner_orijin">
-                            <div class="splide__track">
-                                <div class="splide__list">
+                            <!-- Radio buttons -->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            
                                     <!-- single item -->
-                                    <div class="citrus-slider-single-item splide__slide">
+                                    <div class="citrus-slider-single-item citrus_orijinSlide citrus_splidefirst">
                                         <img src="assets/images/orijen-banner1.png" alt="TBD" />
                                         <div class="citrus-slider-conteiner">
                                             <div class="citrus-slider-banner-content">
@@ -42,8 +47,8 @@
                                                         <h2>NOURISH AS NATURE INTENDED <sup>®</sup></h2>
                                                         <p>Unlock your pet’s full biological potential with protein-rich recipes they were born to eat.</p>
                                                         <div class="citrus-banner-btn">
-                                                            <a href="#">SHOP DOG</a>
-                                                            <a class="citrus_ex_margin" href="#">SHOP CAT</a>
+                                                            <a href="https://www.petco.com/shop/en/petcostore/brand/orijen/dog" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:heropov:1:nourishasnatureintended:shopdog" onclick="clickTrackLink(this);">SHOP DOG</a>
+                                                            <a class="citrus_ex_margin" href="https://www.petco.com/shop/en/petcostore/brand/orijen/cat" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:heropov:1:nourishasnatureintended:shopcat" onclick="clickTrackLink(this);">SHOP CAT</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -53,7 +58,7 @@
                                     <!-- single item -->
 
                                     <!-- single item -->
-                                    <div class="citrus-slider-single-item citrus-slider-single-item2 splide__slide">
+                                    <div class="citrus-slider-single-item citrus-slider-single-item2 citrus_orijinSlide">
                                         <img src="assets/images/orijen-banner2.1.png" alt="TBD" />
                                         <div class="citrus-slider-conteiner">
                                             <div class="citrus-slider-banner-content">
@@ -67,17 +72,18 @@
                                                         <h2>ORIJEN <sup>®</sup> AMAZING GRAINS<sup>™</sup></h2>
                                                         <p>A WholePrey diet for peak dog nutrition, now with grains.</p>
                                                         <div class="citrus-banner-btn">
-                                                            <a href="#">SHOP NOW</a>
+                                                            <a href="https://www.petco.com/shop/en/petcostore/brand/orijen/dog/dog-food/dog-food-with-grain" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:heropov:2:amazinggrains:shopnow" onclick="clickTrackLink(this);">SHOP NOW</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                   
                                         </div>
                                     </div>
                                     <!-- single item -->
 
                                     <!-- single item -->
-                                    <div class="citrus-slider-single-item citrus-slider-single-item3 splide__slide">
+                                    <div class="citrus-slider-single-item citrus-slider-single-item3 citrus_orijinSlide">
                                         <img src="assets/images/orijen-banner3.png" alt="TBD" />
                                         <div class="citrus-slider-conteiner">
                                             <div class="citrus-slider-banner-content">
@@ -87,7 +93,7 @@
                                                         <h2>SUPERIOR PÂTÉ WITH <span>SUCCULENT SHREDS</span></h2>
                                                         <p>Wet cat food made with the most nutritious parts of premium animal ingredients.</p>
                                                         <div class="citrus-banner-btn">
-                                                            <a href="#">SHOP NOW</a>
+                                                            <a href="https://www.petco.com/shop/en/petcostore/brand/orijen/cat/cat-food/wet-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:heropov:3:superiorpate:shopnow" onclick="clickTrackLink(this);">SHOP NOW</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -95,7 +101,24 @@
                                         </div>
                                     </div>
                                     <!-- single item -->
+                                <!-- Auto navigation -->
+                                <div class="citrus_orijin-navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
                                 </div>
+                                <div class="citrus_orijin-navigation-manual">
+                                    <label for="radio1" class="citrus_orijin-manual-btn"></label>
+                                    <label for="radio2" class="citrus_orijin-manual-btn"></label>
+                                    <label for="radio3" class="citrus_orijin-manual-btn"></label>
+                                </div>    
+                               
+                        </div>
+                         <!-- Manual navigation -->
+                            <div class="citrus_orijinnavigation-manual" style="display: none;">
+                                <label for="radio1" class="citrus_orijin-manual-btn"></label>
+                                <label for="radio2" class="citrus_orijin-manual-btn"></label>
+                                <label for="radio3" class="citrus_orijin-manual-btn"></label>
                             </div>
                         </div>
                     </div>
@@ -144,12 +167,12 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusAllTabSelect splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/1.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-original-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:1:originaldogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Amazing Grains High Protein Dry Puppy Food, 22.5 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-original-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:1:originaldogdrywgrain:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -157,12 +180,12 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusAllTabSelect splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-large-breed-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:2:puppylargedogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Amazing Grains Original High Protein Dry Dog Food, 22.5 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-large-breed-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:2:puppylargedogdrywgrain:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -170,12 +193,12 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusAllTabSelect splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:3:puppydogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Amazing Grains Regional Red High Protein Dry Dog Food, 22.5 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:3:puppydogdrywgrain:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -183,12 +206,12 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusAllTabSelect splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/4.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-reg-red-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:4:regionalreddogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/4.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Amazing Grains Six Fish High Protein Dry Dog Food, 22.5 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-reg-red-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:4:regionalreddogdrywgrain:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -196,12 +219,12 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusAllTabSelect splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/5.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-six-fish-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:5:sixfishdogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/5.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Amazing Grains High Protein Large Breed Dry Puppy Food, 22.5 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-six-fish-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:5:sixfishdogdrywgrain:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -233,12 +256,12 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/1.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:1:originaldogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Original Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:1:originaldogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -246,12 +269,12 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:2:regionalreddogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Regional Red Grain Free & Poultry Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:2:regionalreddogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -259,17 +282,148 @@
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-puppy-large-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:3:puppylargedogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
                                                     <p>ORIJEN Puppy Large Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-puppy-large-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:3:puppylargedogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
                                         <!-- tab item -->
                                         <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-puppy-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:4:puppydogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/4.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free High Protein Fresh & Raw Animal Ingredients Dry Puppy Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-puppy-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:4:puppydogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-six-fish-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:5:sixfishdogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/5.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Six Fish Grain Free & Poultry Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-six-fish-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:5:sixfishdogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-senior-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:6:seniordogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/6.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Senior Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-senior-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:6:seniordogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-fit-and-trim-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:7:fittrimdogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/7.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Fit & Trim Grain Free Support Healthy Weight High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-fit-and-trim-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:7:fittrimdogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-tundra-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:8:tundradogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/8.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Tundra Grain Free & Poultry Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-tundra-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:8:tundradogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-small-breed-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:9:smallbreeddogdrygrainfree:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/9.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Small Breed Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 10 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-small-breed-dry-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:grainfreedrydogfood:9:smallbreeddogdrygrainfree:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Meet row 2  -->
+
+                            <!-- start Meet row 3 -->
+                            <div class="cirtus_meet_tabs_main_22 splide cirtus_meet_tabs_22">
+                                <div class="splide__track">
+                                    <div class="splide__list">
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruswetDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-real-meat-shreds-original-stew-premium-wet-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetdogfood:1:originaldogwet:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain-Free Real Meat Shreds Original Stew Premium Wet Dog Food, 12.8 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-real-meat-shreds-original-stew-premium-wet-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetdogfood:1:originaldogwet:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruswetDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-real-meat-shreds-chicken-recipe-stew-premium-wet-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetdogfood:2:chickendogwet:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain-Free Real Meat Shreds Chicken Recipe Stew Premium Wet Dog Food, 12.8 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-real-meat-shreds-chicken-recipe-stew-premium-wet-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetdogfood:2:chickendogwet:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruswetDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-puppy-recipe-with-poultry-and-fish-pate-premium-wet-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetdogfood:3:puppydogwet:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain-Free Puppy Recipe with Poultry & Fish Pate Premium Wet Dog Food, 12.8 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-puppy-recipe-with-poultry-and-fish-pate-premium-wet-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetdogfood:3:puppydogwet:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruswetDog splide__slide citrus_row_opacity_0">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
                                                     <a href=""><img src="assets/images/tab2/4.png" alt="" /></a>
@@ -282,7 +436,7 @@
                                         </div>
                                         <!-- tab item -->
                                         <!-- tab item -->
-                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruswetDog splide__slide citrus_row_opacity_0">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
                                                     <a href=""><img src="assets/images/tab2/5.png" alt="" /></a>
@@ -296,7 +450,7 @@
                                         <!-- tab item -->
 
                                         <!-- tab item -->
-                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruswetDog splide__slide citrus_row_opacity_0">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
                                                     <a href=""><img src="assets/images/tab2/6.png" alt="" /></a>
@@ -309,44 +463,120 @@
                                         </div>
                                         <!-- tab item -->
 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Meet row 3  -->
+
+                            <!-- start Meet row 4 -->
+                            <div class="cirtus_meet_tabs_main_22 splide cirtus_meet_tabs_22">
+                                <div class="splide__track">
+                                    <div class="splide__list">
                                         <!-- tab item -->
-                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/7.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-freeze-dried-original-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:1:originalfrzdrddogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
-                                                    <p>ORIJEN Fit & Trim Grain Free Support Healthy Weight High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                    <p>ORIJEN Freeze-Dried Original Dog Treats, 3.25 oz.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-freeze-dried-original-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:1:originalfrzdrddogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-freeze-dried-regional-red-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:2:regionalredfrzdrddogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Freeze-Dried Regional Red Dog Treats, 3.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-freeze-dried-regional-red-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:2:regionalredfrzdrddogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-original-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:3:tundrafrzdrddogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Freeze-Dried Tundra Dog Treats, 3.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-original-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:3:tundrafrzdrddogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-original-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:4:originalhighprotiendogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/4.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN High Protein Original Crunchy Biscuit Dog Treats, 8 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-original-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:4:originalhighprotiendogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-puppy-crunchy-biscuit-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:5:puppyhighprotiendogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/5.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN High Protein Puppy Crunchy Biscuit Treats, 8 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-puppy-crunchy-biscuit-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:5:puppyhighprotiendogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
 
                                         <!-- tab item -->
-                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/8.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-regional-red-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:6:regionalredhighprotiendogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/6.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
-                                                    <p>ORIJEN Tundra Grain Free & Poultry Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                    <p>ORIJEN High Protein Regional Red Crunchy Biscuit Dog Treats, 8 oz.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-regional-red-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:6:regionalredhighprotiendogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
 
                                         <!-- tab item -->
-                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusDryDog splide__slide">
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
                                             <div class="citrus-meet-tab-product">
                                                 <div class="citrus-inner-img22">
-                                                    <a href=""><img src="assets/images/tab2/9.png" alt="" /></a>
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-fit-and-trim-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:7:fittrimhighprotiendogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/7.png" alt="" /></a>
                                                 </div>
                                                 <div class="citrus_product_info22">
-                                                    <p>ORIJEN Small Breed Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 10 lbs.</p>
+                                                    <p>ORIJEN High Protein Fit & Trim Crunchy Biscuit Dog Treats, 8 oz.</p>
                                                 </div>
-                                                <a href="" >Shop Now</a>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-high-protein-fit-and-trim-crunchy-biscuit-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:7:fittrimhighprotiendogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusTreatsDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-freeze-dried-angus-beef-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:8:angusbeeffrzdrddogtreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/8.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Freeze-Dried Angus Beef Dog Treats, 3.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-freeze-dried-angus-beef-dog-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:dogtreats:8:angusbeeffrzdrddogtreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
                                             </div>
                                         </div>
                                         <!-- tab item -->
@@ -354,7 +584,366 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Meet row 2  -->
+                            <!-- End Meet row 4  -->
+
+                            <!-- start Meet row 5 -->
+                            <div class="cirtus_meet_tabs_main_22 splide cirtus_meet_tabs_22">
+                                <div class="splide__track">
+                                    <div class="splide__list">
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusFreeDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-freeze-dried-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:freezedrieddogfood:1:originalfrzdrddogfood:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Freeze-Dried Original Biologically Appropriate Dog Food, 16 OZ Bag</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-freeze-dried-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:freezedrieddogfood:1:originalfrzdrddogfood:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusFreeDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-freeze-dried-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:freezedrieddogfood:2:regionalredfrzdrddogfood:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Regional Red Recipe Grain Free High Protein Premium Raw Meat Freeze Dried Dog Food, 16 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-freeze-dried-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:freezedrieddogfood:2:regionalredfrzdrddogfood:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusFreeDog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-tundra-freeze-dried-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:freezedrieddogfood:3:tundrafrzdrddogfood:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Freeze-Dried Tundra Biologically Appropriate Dog Food, 16 OZ Bag</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-tundra-freeze-dried-dog-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:freezedrieddogfood:3:tundrafrzdrddogfood:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusFreeDog splide__slide citrus_row_opacity_0">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href=""><img src="assets/images/tab2/4.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free High Protein Fresh & Raw Animal Ingredients Dry Puppy Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusFreeDog splide__slide citrus_row_opacity_0">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href=""><img src="assets/images/tab2/5.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Six Fish Grain Free & Poultry Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusFreeDog splide__slide citrus_row_opacity_0">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href=""><img src="assets/images/tab2/6.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Senior Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Meet row 5  -->
+
+                            <!-- start Meet row 6 -->
+                            <div class="cirtus_meet_tabs_main_22 splide cirtus_meet_tabs_22">
+                                <div class="splide__track">
+                                    <div class="splide__list">
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscat2Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-cat-and-kitten-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:1:originalcatdry:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Cat High Protein Fresh & Raw Animal Ingredients Dry Food, 12 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-cat-and-kitten-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:1:originalcatdry:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscat2Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-six-fish-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:2:sixfishcatdry:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free Six Fish Premium High Protein Fresh & Raw Animal Ingredients Dry Cat Food, 12 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-six-fish-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:2:sixfishcatdry:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscat2Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-fit-and-trim-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:3:fittrimcatdry:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free Fit & Trim Support Healthy Weight Fresh & Raw Animal Ingredients Dry Cat Food, 12 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-fit-and-trim-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:3:fittrimcatdry:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscat2Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:4:regionalredcatdry:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/4.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free Regional Red Premium High Protein Fresh & Raw Animal Ingredients Dry Cat Food, 12 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-dry-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:4:regionalredcatdry:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscat2Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-guardian-8-dry-adult-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:5:guardiancatdry:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/5.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free Guardian 8 Dry Adult Cat Food, 10 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-guardian-8-dry-adult-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:5:guardiancatdry:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscat2Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-premium-high-protein-dry-kitten-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:6:kittencatdry:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/6.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free Premium High Protein Dry Kitten Food, 4 lbs.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grain-free-premium-high-protein-dry-kitten-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:drycatfood:6:kittencatdry:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Meet row 6  -->
+
+                            <!-- start Meet row 7 -->
+                            <div class="cirtus_meet_tabs_main_22 splide cirtus_meet_tabs_22">
+                                <div class="splide__track">
+                                    <div class="splide__list">
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusWet21Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-tuna-recipe-in-bone-broth-for-kittens-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetcatfood:1:originalcatwet:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Chicken + Salmon Entree in Bone Broth Kitten Recipe Wet Cat Food, 3 oz., Case of 24</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-tuna-recipe-in-bone-broth-for-kittens-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetcatfood:1:originalcatwet:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusWet21Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-chicken-salmon-entree-in-bone-broth-kitten-recipe-cat-food-5162745-1" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetcatfood:2:kittenchickencatwet:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Original Entree in Bone Broth Wet Cat Food, 3 oz., Case of 24</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-chicken-salmon-entree-in-bone-broth-kitten-recipe-cat-food-5162745-1" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetcatfood:2:kittenchickencatwet:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusWet21Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-entree-in-bone-broth-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetcatfood:3:tunasamonbeefcatwet:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Tuna, Salmon + Beef Entree in Bone Broth Wet Cat Food, 3 oz., Case of 24</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-entree-in-bone-broth-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:wetcatfood:3:tunasamonbeefcatwet:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusWet21Dog splide__slide citrus_row_opacity_0">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href=""><img src="assets/images/tab2/4.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grain Free High Protein Fresh & Raw Animal Ingredients Dry Puppy Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusWet21Dog splide__slide citrus_row_opacity_0">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href=""><img src="assets/images/tab2/5.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Six Fish Grain Free & Poultry Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusWet21Dog splide__slide citrus_row_opacity_0">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href=""><img src="assets/images/tab2/6.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Senior Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Meet row 7  -->
+
+                            <!-- start Meet row 8 -->
+                            <div class="cirtus_meet_tabs_main_22 splide cirtus_meet_tabs_22">
+                                <div class="splide__track">
+                                    <div class="splide__list">
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscatx22Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:1:originalfrzdrdcattreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/1.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Original Freeze-Dried Cat Treats, 1.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:1:originalfrzdrdcattreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscatx22Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-6-fish-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:2:sixfishfrzdrdcattreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/2.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN 6 Fish Freeze-Dried Cat Treats, 1.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-6-fish-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:2:sixfishfrzdrdcattreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscatx22Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:3:regionalredfrzdrdcattreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/3.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Regional Red Freeze-Dried Cat Treats, 1.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:3:regionalredfrzdrdcattreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscatx22Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-tundra-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:4:tundrafrzdrdcattreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/4.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Tundra Freeze-Dried Cat Treats, 1.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-tundra-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:4:tundrafrzdrdcattreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscatx22Dog splide__slide">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grass-fed-lamb-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:5:lambfrzdrdcattreat:product" onclick="clickTrackLink(this);"><img src="assets/images/tab2/5.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Grass-Fed Lamb Freeze-Dried Cat Treats, 1.25 oz.</p>
+                                                </div>
+                                                <a href="https://www.petco.com/shop/en/petcostore/product/orijen-grass-fed-lamb-freeze-dried-cat-treats" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:cattreats:5:lambfrzdrdcattreat:shopnow" onclick="clickTrackLink(this);" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        <!-- tab item -->
+                                        <div class="citrus_item_section__tab_content_item citrusfilterMeetDiv citruscatx22Dog splide__slide citrus_row_opacity_0">
+                                            <div class="citrus-meet-tab-product">
+                                                <div class="citrus-inner-img22">
+                                                    <a href=""><img src="assets/images/tab2/6.png" alt="" /></a>
+                                                </div>
+                                                <div class="citrus_product_info22">
+                                                    <p>ORIJEN Senior Grain Free High Protein Fresh & Raw Animal Ingredients Dry Dog Food, 25 lbs.</p>
+                                                </div>
+                                                <a href="" >Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <!-- tab item -->
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Meet row 8  -->
 
                         </div>
                         <!--=================== tab content ===================-->
@@ -389,7 +978,7 @@
                             </div>
                         </div>
                         <div class="citrus-nourish-right">
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/NHY-4QAM7sE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NHY-4QAM7sE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -435,33 +1024,33 @@
                                     <div class="splide__list">
                                         <!-- single item -->
                                         <div class="citrus-origins-single-item splide__slide">
-                                            <a href="#"><img src="assets/images/amazing-product/1.png" alt="" /></a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-original-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:1:originaldogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/amazing-product/1.png" alt="" /></a>
                                             <p>ORIJEN Amazing Grains High Protein Dry Puppy Food, 22.5 lbs.</p>
-                                            <a href="#">Shop Now</a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-original-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:1:originaldogdrywgrain:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                         </div>
                                         <!-- single item -->
                                         <div class="citrus-origins-single-item splide__slide">
-                                            <a href="#"><img src="assets/images/amazing-product/2.png" alt="" /></a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-large-breed-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:2:puppylargedogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/amazing-product/2.png" alt="" /></a>
                                             <p>ORIJEN Amazing Grains Original High Protein Dry Dog Food, 22.5 lbs.</p>
-                                            <a href="#">Shop Now</a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-large-breed-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:2:puppylargedogdrywgrain:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                         </div>
                                         <!-- single item -->
                                         <div class="citrus-origins-single-item splide__slide">
-                                            <a href="#"><img src="assets/images/amazing-product/3.png" alt="" /></a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:3:puppydogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/amazing-product/3.png" alt="" /></a>
                                             <p>ORIJEN Amazing Grains Regional Red High Protein Dry Dog Food, 22.5 lbs.</p>
-                                            <a href="#">Shop Now</a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:3:puppydogdrywgrain:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                         </div>
                                         <!-- single item -->
                                         <div class="citrus-origins-single-item splide__slide">
-                                            <a href="#"><img src="assets/images/amazing-product/4.png" alt="" /></a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-reg-red-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:4:regionalreddogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/amazing-product/4.png" alt="" /></a>
                                             <p>ORIJEN Amazing Grains Six Fish High Protein Dry Dog Food, 22.5 lbs.</p>
-                                            <a href="#">Shop Now</a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-reg-red-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:4:regionalreddogdrywgrain:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                         </div>
                                         <!-- single item -->
                                         <div class="citrus-origins-single-item splide__slide">
-                                            <a href="#"><img src="assets/images/amazing-product/5.png" alt="" /></a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-six-fish-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:5:sixfishdogdrywgrain:product" onclick="clickTrackLink(this);"><img src="assets/images/amazing-product/5.png" alt="" /></a>
                                             <p>ORIJEN Amazing Grains High Protein Large Breed Dry Puppy Food, 22.5 lbs.</p>
-                                            <a href="#">Shop Now</a>
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-amazing-grains-six-fish-high-protein-dry-puppy-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:neworijenamazinggrains:5:sixfishdogdrywgrain:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -493,21 +1082,21 @@
                             <div class="citrus-wet-cat-carocel">
                                 <!-- single item -->
                                 <div class="citrus-wet-single-item">
-                                    <a href="#"><img src="assets/images/t1.png" alt="" /></a>
+                                    <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-tuna-recipe-in-bone-broth-for-kittens-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:superiorpatetoppedwithsuccelentshreds:1:originalcatwet:product" onclick="clickTrackLink(this);"><img src="assets/images/t1.png" alt="" /></a>
                                     <p>ORIJEN Chicken + Salmon Entree in Bone Broth Kitten Recipe Wet Cat Food, 3 oz., Case of 24</p>
-                                    <a href="#">Shop Now</a>
+                                    <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-tuna-recipe-in-bone-broth-for-kittens-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:superiorpatetoppedwithsuccelentshreds:1:originalcatwet:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                 </div>
                                 <!-- single item -->
                                 <div class="citrus-wet-single-item">
-                                    <a href="#"><img src="assets/images/t2.png" alt="" /></a>
+                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-chicken-salmon-entree-in-bone-broth-kitten-recipe-cat-food-5162745-1" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:superiorpatetoppedwithsuccelentshreds:2:kittenchickencatwet:product" onclick="clickTrackLink(this);"><img src="assets/images/t2.png" alt="" /></a>
                                     <p>ORIJEN Original Entree in Bone Broth Wet Cat Food, 3 oz., Case of 24</p>
-                                    <a href="#">Shop Now</a>
+                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-chicken-salmon-entree-in-bone-broth-kitten-recipe-cat-food-5162745-1" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:superiorpatetoppedwithsuccelentshreds:2:kittenchickencatwet:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                 </div>
                                 <!-- single item -->
                                 <div class="citrus-wet-single-item">
-                                    <a href="#"><img src="assets/images/t3.png" alt="" /></a>
+                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-entree-in-bone-broth-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:superiorpatetoppedwithsuccelentshreds:3:tunasamonbeefcatwet:product" onclick="clickTrackLink(this);"><img src="assets/images/t3.png" alt="" /></a>
                                     <p>ORIJEN Tuna, Salmon + Beef Entree in Bone Broth Wet Cat Food, 3 oz., Case of 24</p>
-                                    <a href="#">Shop Now</a>
+                                    <a href="https://www.petco.com/shop/en/petcostore/product/orijen-regional-red-entree-in-bone-broth-cat-food" "/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:orijen:superiorpatetoppedwithsuccelentshreds:3:tunasamonbeefcatwet:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -570,6 +1159,62 @@
         </script>
 
         <script>
+             //slider script
+        let counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+        </script>
+
+         <script>
+            //meet tab carocel js
+             var splides = document.querySelectorAll('.cirtus_meet_tabs_22');
+            if(splides.length){
+                for(var i=0; i<splides.length; i++){
+                    var splideElement = splides[i];
+                    var splideDefaultOptions = 
+                    {
+                        rewind: true,
+                        type: 'slide',
+                        autoplay: false,
+                        rewindSpeed: 500,
+                        speed: 500,
+                        pauseOnHover:true,
+                        perPage:4,
+                        perMove:2,
+                        width:'100%',
+                        breakpoints: {
+                          375: {
+                              perPage: 1,
+                          },
+                          576: {
+                              perPage: 2,
+                          },
+                          991: {
+                              perPage: 3,
+                          },
+                          992: {
+                              perPage: 4,
+                          },
+                          1024: {
+                              perPage: 6,
+                          },
+                          1200: {
+                              perPage: 6,
+                          }
+                    }
+                    }
+             
+                    new Splide( splideElement, splideDefaultOptions ).mount();
+                }
+            }
+        </script>
+
+        <script>
             //for Dog best seller tab switcher
             filterBestDog("citrusDryDog");
 
@@ -618,66 +1263,24 @@
             }
             //for Dog best seller tab switcher
         </script>
-
-        <script>
-     var splides = document.querySelectorAll('.cirtus_meet_tabs_22');
-    if(splides.length){
-        for(var i=0; i<splides.length; i++){
-            var splideElement = splides[i];
-            var splideDefaultOptions = 
-            {
-                rewind: true,
-                type: 'slide',
-                autoplay: false,
-                rewindSpeed: 500,
-                speed: 500,
-                pauseOnHover:true,
-                perPage:6,
-                perMove:2,
-                width:'100%',
-                breakpoints: {
-                  375: {
-                      perPage: 1,
-                  },
-                  576: {
-                      perPage: 2,
-                  },
-                  991: {
-                      perPage: 3,
-                  },
-                  992: {
-                      perPage: 4,
-                  },
-                  1024: {
-                      perPage: 4,
-                  },
-                  1200: {
-                      perPage: 6,
-                  }
-            }
-            }
-     
-            new Splide( splideElement, splideDefaultOptions ).mount();
-        }
-    }
-</script>
+        
 
         <script>
             //Hero banner slider js
-            document.addEventListener("DOMContentLoaded", function () {
-                var splide = new Splide(".citrus_splide_banner_orijin", {
-                    rewind: true,
-                    type: "loop",
-                    autoplay: false,
-                    rewindSpeed: 5000,
-                    speed: 2500,
-                    // fixedWidth : '100%',
-                    // fixedHeight: 'auto',
-                    pauseOnHover: false,
-                    autoWidth: false,
-                });
-                splide.mount();
-            });
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     var splide = new Splide(".citrus_splide_banner_orijin", {
+            //         rewind: true,
+            //         type: "loop",
+            //         autoplay: false,
+            //         rewindSpeed: 5000,
+            //         speed: 2500,
+            //         fixedWidth : '100%',
+            //         fixedHeight: 'auto',
+            //         pauseOnHover: false,
+            //         autoWidth: false,
+            //     });
+            //     splide.mount();
+            // });
 
             //New Orijen Amazing Grains Carocel js
             document.addEventListener("DOMContentLoaded", function () {
