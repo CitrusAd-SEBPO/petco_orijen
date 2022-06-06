@@ -1,3 +1,4 @@
+
 /*
  * Legal Disclaimer
  *
@@ -235,7 +236,7 @@ a:hover {
     margin: 0 auto;
     display: block !important;
 }
-.citrus-all-overflow {
+.citrus-orijin-all-overflow {
     overflow: hidden !important;
 }
 
@@ -260,31 +261,37 @@ a:hover {
 /************ Splide Css*************/
 /************************************/
 .splide__container {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: relative;
 }
 .splide__list {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 .splide.is-initialized:not(.is-active) .splide__list {
     display: block;
 }
 .splide__pagination {
     -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     margin: 0;
     pointer-events: none;
 }
@@ -310,7 +317,8 @@ a:hover {
 .splide__slide {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     list-style-type: none !important;
@@ -325,7 +333,8 @@ a:hover {
     position: relative;
 }
 .splide__spinner {
-    animation: splide-loading 1s linear infinite;
+    -webkit-animation: splide-loading 1s linear infinite;
+            animation: splide-loading 1s linear infinite;
     border: 2px solid #999;
     border-left-color: transparent;
     border-radius: 50%;
@@ -345,19 +354,32 @@ a:hover {
     position: relative;
     z-index: 0;
 }
-@keyframes splide-loading {
+@-webkit-keyframes splide-loading {
     0% {
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
     to {
-        transform: rotate(1turn);
+        -webkit-transform: rotate(1turn);
+                transform: rotate(1turn);
+    }
+}
+@keyframes splide-loading {
+    0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+                transform: rotate(1turn);
     }
 }
 .splide--draggable > .splide__slider > .splide__track,
 .splide--draggable > .splide__track {
     -webkit-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    -moz-user-select: none;
+         user-select: none;
 }
 .splide--fade > .splide__slider > .splide__track > .splide__list,
 .splide--fade > .splide__track > .splide__list {
@@ -386,21 +408,26 @@ a:hover {
 }
 .splide__arrow {
     -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     background: #ccc;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     height: 2em;
     -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     opacity: 0.7;
     padding: 0;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 2em;
     z-index: 1;
 }
@@ -419,7 +446,9 @@ a:hover {
     left: 1em;
 }
 .splide__arrow--prev svg {
-    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
 }
 .splide__arrow--next {
     right: 1em;
@@ -441,12 +470,18 @@ a:hover {
     margin: 3px;
     opacity: 0.7;
     padding: 0;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
     transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
     width: 8px;
 }
 .splide__pagination__page.is-active {
     background: #fff;
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+            transform: scale(1.4);
 }
 .splide__pagination__page:hover {
     cursor: pointer;
@@ -481,7 +516,9 @@ a:hover {
 .splide--rtl > .splide__arrows .splide__arrow--prev svg,
 .splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev svg,
 .splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev svg {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
 }
 .splide--rtl > .splide__arrows .splide__arrow--next,
 .splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next,
@@ -492,13 +529,17 @@ a:hover {
 .splide--rtl > .splide__arrows .splide__arrow--next svg,
 .splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next svg,
 .splide--rtl > .splide__track > .splide__arrows .splide__arrow--next svg {
-    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
 }
 .splide--ttb > .splide__arrows .splide__arrow,
 .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow,
 .splide--ttb > .splide__track > .splide__arrows .splide__arrow {
     left: 50%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
 }
 .splide--ttb > .splide__arrows .splide__arrow--prev,
 .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev,
@@ -508,7 +549,9 @@ a:hover {
 .splide--ttb > .splide__arrows .splide__arrow--prev svg,
 .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev svg,
 .splide--ttb > .splide__track > .splide__arrows .splide__arrow--prev svg {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 .splide--ttb > .splide__arrows .splide__arrow--next,
 .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next,
@@ -519,15 +562,20 @@ a:hover {
 .splide--ttb > .splide__arrows .splide__arrow--next svg,
 .splide--ttb > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next svg,
 .splide--ttb > .splide__track > .splide__arrows .splide__arrow--next svg {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 .splide--ttb > .splide__pagination,
 .splide--ttb > .splide__slider > .splide__pagination {
     bottom: 0;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     left: auto;
     padding: 1em 0;
     right: 0.5em;
@@ -572,6 +620,7 @@ a:hover {
 
           .citrus_orijinSlide {
             min-width: 100%;
+            -o-transition: 2s;
             transition: 2s;
             -webkit-transition: 2s;
         }
@@ -587,8 +636,12 @@ a:hover {
     .citrus_orijin-navigation-manual{
         position: absolute;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         bottom: 0;
         padding: 10px 0 10px 25px;
         width: 100px;
@@ -599,6 +652,8 @@ a:hover {
         padding : 8px;
         border-radius: 10px;
         cursor: pointer;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
 
     }
@@ -620,8 +675,12 @@ a:hover {
 
    .citrus_orijin-navigation-auto {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     bottom: 0;
     background: transparent;
     padding: 10px 0 10px 25px;
@@ -633,6 +692,8 @@ a:hover {
     .citrus_orijin-navigation-auto div {
     padding: 8px;
     border-radius: 10px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     background: #B1B1B1;
 }
@@ -712,10 +773,14 @@ a:hover {
     max-width: 1250px;
     width: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 0;
     left: 0;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .citrus-slider-single-item {
@@ -723,6 +788,8 @@ a:hover {
 }
 
 .citrus-banner-middle-content-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -778,6 +845,7 @@ a:hover {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    text-transform: uppercase;
 }
 
 .citrus-banner-inner-right .citrus-banner-btn .citrus_ex_margin{
@@ -791,9 +859,13 @@ a:hover {
 }
 
 .citrus-slider-single-item2 .citrus-banner-middle-content-inner {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .citrus-banner-inner-right.citrus-banner-inner-right2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 0;
 }
@@ -835,13 +907,19 @@ a:hover {
     margin: 4px;
     opacity: 1;
     padding: 0;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
     transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
     width: 16px;
 }
 
 .citrus_splide_banner_orijin .splide__pagination__page.is-active {
     background: #fff;
-    transform: inherit;
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
 }
 
 /**************************************/
@@ -907,25 +985,36 @@ a:hover {
         }
 
         .citrus-meet-orijen-main21 {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             margin-bottom: 30px;
             border-bottom: 1px solid #021B4E;
         }
 
 
-        .citrus-meet-section__tab-content {
+        .cirtus_meet_tabs_22 {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             overflow: hidden;
         }
 
         .citrus_item_section__tab_content_item {
             max-width: 195px;
             width: 100% !important;
-            margin: 0px 11px;
+            margin: 0px 9px;
         }
 
         .citrus-inner-img22 > a img {
@@ -962,7 +1051,7 @@ a:hover {
         }
 
         .cirtus_meet_tabs_22 .splide__arrow--next {
-            right: 2px;
+            right: 0px;
         }
         .cirtus_meet_tabs_22 .splide__arrow--prev {
             left: 2px;
@@ -972,21 +1061,26 @@ a:hover {
         }
         .cirtus_meet_tabs_22 .splide__arrow {
             -ms-flex-align: center;
-            align-items: center;
+            -webkit-box-align: center;
+                    align-items: center;
             background: transparent;
             border: 1px solid #122359;
             border-radius: 50%;
             cursor: pointer;
             display: -ms-flexbox;
+            display: -webkit-box;
             display: flex;
             height: 3.2em;
             -ms-flex-pack: center;
-            justify-content: center;
+            -webkit-box-pack: center;
+                    justify-content: center;
             opacity: 1;
             padding: 0;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
             width: 3.2em;
             z-index: 1;
         }
@@ -1002,6 +1096,8 @@ a:hover {
 }
 
 .citrus-main-nourish-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -1015,7 +1111,9 @@ a:hover {
 }
 .citrus-nourish-right {
     margin-left: 10px;
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
 }
 .citrus-nourish-right > iframe {
     height: 100%;
@@ -1111,16 +1209,24 @@ p{
 }
 
 .citrus-orgins-main-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .citrus-orgins-left {
-    flex: 0 0 30%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
     position: relative;
 }
 .citrus-orgins-right {
-    flex: 0 0 70%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
     padding-left: 30px;
     overflow: hidden;
 }
@@ -1207,21 +1313,26 @@ p{
 }
 .citrus_origins_product_slide2 .splide__arrow {
     -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     background: transparent;
     border: 1px solid #122359;
     border-radius: 50%;
     cursor: pointer;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     height: 3.2em;
     -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     opacity: 1;
     padding: 0;
     position: absolute;
     top: 30%;
-    transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+        -ms-transform: translateY(-30%);
+            transform: translateY(-30%);
     width: 3.2em;
     z-index: 1;
 }
@@ -1244,15 +1355,23 @@ p{
 }
 
 .citrus-wet-cat-main-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .citrus-wet-cat-left {
-    flex: 0 0 40%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
     margin-left: 22px;
 }
 .citrus-wet-cat-right {
-    flex: 0 0 58%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58%;
+            flex: 0 0 58%;
     padding-left: 20px;
 }
 .citrus-wet-cat-left > img {
@@ -1261,11 +1380,15 @@ p{
 }
 
 .citrus-wet-cat-carocel{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .citrus-wet-single-item {
-    flex: 0 0 200px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
     margin: 0px 10px;
 }
 
@@ -1313,14 +1436,23 @@ p{
 }
 
 .citrus-transitioning-main-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .citrus-transitioning-left {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     padding-right: 10px;
 }
 
@@ -1330,7 +1462,9 @@ p{
 }
 
 .citrus-transitioning-right {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     padding-left: 10px;
 }
 .citrus-transitioning-right > img {
@@ -1358,6 +1492,9 @@ p{
     padding-bottom: 5px;
 }
 
+.cirtus_meet_tabs_main_22_hide_arrow .splide__arrows {
+    display: none;
+}
 
 
 /**************************************/
@@ -1395,10 +1532,19 @@ p{
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     bottom: 0;
 }
 .citrus-btm-main-overly > span {
@@ -1410,19 +1556,66 @@ p{
 }
 
 
+
+
+
+
+
+
+
+    .citrus-banner-slider-desktop-view{
+        display: block;
+    }
+
+    .citrus-banner-slider-mobile-view{
+        display: none;
+    }
+
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-desktop-view .citrus_orijin_normal {
+        display: block;
+    }
+
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-desktop-view .citrus_orijin_active {
+        display: none;
+    }
+
+
+    .citrus-wet-cate-desktop{
+        display: block;
+    }
+      .citrus-wet-cate-mobile{
+        display: none;
+    }
+
+    .citrus-btm-main-desktop{
+        display: block;
+    }
+    .citrus-btm-main-mobile{
+        display: none;
+    }
+
+
 /**************************************/
 /************ Mesia Query  Area*************/
 /************************************/
 @media all and (min-width: 1441px) and (max-width:4800px) {
     .citrus-slider-banner-content {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .citrus-slider-single-item2 .citrus-banner-middle-content-inner > img {
+        width: 200px;
+        height: 132px;
     }
 }
 
 
 @media all and (min-width: 992px) and (max-width:1280px) {
     .citrus-slider-banner-content {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -1465,7 +1658,9 @@ p{
         max-width: 210px;
     }
     .citrus-wet-single-item {
-        flex: 0 0 150px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 150px;
+                flex: 0 0 150px;
     }
     .citrus-wet-single-item > a > img {
         width: 115px;
@@ -1479,9 +1674,21 @@ p{
 
 
 @media all and (max-width: 1280px) {
+
     .citrus-meet-orijen-wrapper {
-    overflow-y: auto;
+        overflow-y: auto;
+    }
+
+     /* Hide scrollbar for Chrome, Safari and Opera */
+.citrus-meet-orijen-wrapper::-webkit-scrollbar {
+  display: none;
 }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.citrus-meet-orijen-wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
 
 .citrus-meet-orijen-main21 {
     width: 280%;
@@ -1494,6 +1701,10 @@ p{
 }
 
 @media all and (max-width: 991px) {
+    .citrus-wet-single-item > p {
+        height: 75px;
+        padding-top: 20px;
+    }
     .citrus-slider-single-item > img {
         width: 100%;
         height: 300px;
@@ -1501,7 +1712,9 @@ p{
     .citrus-slider-banner-content {
         padding-top: 0px; 
         padding-bottom: 0px; 
-        align-items: center;
+        -webkit-box-align: center; 
+            -ms-flex-align: center; 
+                align-items: center;
     }
     .citrus-slider-single-item2 .citrus-banner-middle-content-inner > img {
         width: 180px;
@@ -1520,8 +1733,11 @@ p{
     }
 
     .citrus-main-nourish-flex {
-        flex-wrap: wrap;
-        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .citrus-mm-content {
         margin-top: -50px;
@@ -1534,7 +1750,9 @@ p{
 
     .citrus-nourish-right {
         margin-left: 0px;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
 
     .citrus-nourish-right > iframe {
@@ -1545,13 +1763,18 @@ p{
         padding-bottom: 40px;
     }
     .citrus-orgins-main-flex {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .citrus-orgins-left {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
     .citrus-orgins-right {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         padding-left: 0px;
         overflow: hidden;
         padding-top: 25px;
@@ -1563,7 +1786,9 @@ p{
         position: absolute;
         top: 40%;
         left: 0;
-        transform: translateY(-40%);
+        -webkit-transform: translateY(-40%);
+            -ms-transform: translateY(-40%);
+                transform: translateY(-40%);
     }
     .citrus-bdr {
         width: 275px;
@@ -1575,33 +1800,57 @@ p{
         width: 82%;
     }
     .citrus-wet-cat-main-flex {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .citrus-wet-cat-left {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         margin-left: 0px;
         padding-bottom: 55px;
     }
     .citrus-wet-cat-right {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         padding-left: 0px;
     }
     .citrus-wet-cat-carocel {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         overflow-y: auto;
     }
+     /* Hide scrollbar for Chrome, Safari and Opera */
+.citrus-wet-cat-carocel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.citrus-wet-cat-carocel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
     .citrus-wet-single-item {
-        flex: 0 0 60%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 60%;
+                flex: 0 0 60%;
     }
     .citrus-transitioning-main-flex {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .citrus-transitioning-left {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         padding-right: 0px;
     }
     .citrus-transitioning-right {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         padding-left: 0px;
     }
     .citrus-btm-main-overly {
@@ -1615,22 +1864,425 @@ p{
         width: 53%;
         text-align: center;
     }
+    .citrus-wet-single-item > a > img {
+        width: 100%;
+    }
 
 
 }
 
 @media all and (max-width: 767px) {
- 
+
+     .citrus-banner-slider-mobile-view{
+        display: block;
+    }
+    .citrus-banner-slider-desktop-view{
+        display: none;
+    }
+    .citrus-slider-single-item > img {
+        height: auto;
+    }
+    .citrus-slider-banner-content {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .citrus-banner-middle-content-inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .citrus-banner-middle-content-inner > img, .citrus-banner-inner-right2 > img {
+        width: 73px;
+        height: auto;
+        display: block;
+        margin-bottom: 17px;
+    }
+    .citrus-banner-inner-right {
+        padding-left: 0px; 
+        margin-top: 0px; 
+        text-align: center;
+    }
+    .citrus-banner-inner-right > p, .citrus-innx-content > p {
+        width: 56%;
+        margin: 0 auto;
+    }
+     .citrus-banner-inner-right > h2, .citrus-innx-content > h2 {
+        font-size: 20px;
+        padding-bottom: 17px;
+        line-height: 0.7;
+    }
+    .citrus-banner-btn > a, .citrus-innx-content > a {
+        background: transparent;
+        color: #fff;
+        padding: 0px 4px;
+        text-decoration: underline;
+        text-transform: capitalize;
+    }
+    .citrus-banner-btn > a:hover, .citrus-innx-content > a:hover a {
+        background: transparent;
+        color: #fff;
+    }
+
+     
+    /*Start mobile inner bnr slider*/
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-mobile-view .citrus_orijin_active {
+        display: block;
+    }
+
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-mobile-view .citrus_orijin_normal {
+        display: none;
+    }
+
+
+
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-mobile-view .citrus-slider-banner-content.citrus-slider-banner-content_mobile .citrus-banner-middle-content-inner {
+        display: none;
+    }
+
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-mobile-view .citrus-banner-inner-right.citrus-banner-inner-right2 {
+        width: 100%;
+    }
+
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-mobile-view .citrus-banner-inner-right.citrus-banner-inner-right2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-top: 208px;
+    }
+
+    .citrus-innx-content > span {
+        color: #001952;
+        font-size: 20px;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        background: transparent;
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .citrus-banner-middle-content-inner3 {
+        padding-top: 80px;
+    }
+
+    .citrus-banner-middle-content-inner3 .citrus-banner-inner-right h2 {
+        line-height: 1.1;
+    }
+    .citrus_orijin-navigation-auto {
+        left: 40%;
+    }
+
+    /*End mobile inner bnr slider*/
+
+
+
+
+
+    .citrus-common-header > h2 {
+        font-size: 20px;
+    }
+    .citrus_meet_tab_item {
+        width: 100%;
+    }
+    .citrus_item_section__tab_content_item {
+        max-width: 235px;
+    }
+    .citrus-common-header > p {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .citrus-noramg-container {
+        width: 100%;
+    }
+    .citrus-mm-content > h3 {
+        font-size: 18px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .citrus-mm-content > p {
+        width: 58%;
+        margin: 0 auto;
+    }
+    .citrus-organs-container {
+        width: 90%;
+    }
+    .citrus-bdr {
+        width: 220px;
+    }
+    .citrus-bdr.citrus-bdr2 {
+        width: 204px;
+    }
+    .citrus-orgins-btm-content > p {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .citrus-origins-single-item {
+        max-width: 100%;
+    }
+    .citrus_origins_product_slide2 .splide__arrow.splide__arrow--next {
+        display: none;
+    }
+    .cirtus_meet_tabs_main_22 .splide__arrows {
+        display: none;
+    }
+    .citrus-common-header.citrus-common-header2 > h2 {
+        width: 58%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .citrus-common-header > p {
+        text-align: center;
+    }
+    .citrus-common-header2 {
+        border-bottom: none;
+    }
+
+    .citrus-wet-cate-mobile{
+        display: block;
+    }
+    .citrus-wet-cate-desktop{
+        display: none;
+    }
+
+
+    .citrus-btm-main-mobile{
+        display: block;
+    }
+    .citrus-btm-main-desktop{
+        display: none;
+    }
+    .citrus-btm-main-des img {
+        width: 100%;
+        height: auto;
+    }
+    .citrus-btm-main-overly-des h4 {
+    font-size: 18px;
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    font-family: "PetcoCircularTT-Bold", arial !important;
+    text-align: center;
+}
+
+.citrus-btm-main-overly-des p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
 }
 
 @media all and (max-width: 575px) {
+    .citrus-btm-main-overly-des p {
+        width: 100%;
+    }
+    .citrus-wet-single-item > a > img {
+        width: 100%;
+    }
+    .citrus-wet-single-item > p {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    .citrus-wet-cat-left {
+        padding-bottom: 30px;
+    }
+    .citrus-wet-cat-launch-area {
+        padding-top: 42px;
+        padding-bottom: 30px;
+    }
+    .citrus-orgins-btm-content > p {
+        width: 91%;
+    }
+    .citrus-bdr {
+        width: 165px;
+    }
+    .citrus-bdr.citrus-bdr2 {
+        width: 80%;
+    }
+    .citrus-bdr.citrus-bdr2 {
+        width: 145px;
+    }
+    .citrus-bg-img {
+        top: 20%;
+        -webkit-transform: translateY(-20%);
+            -ms-transform: translateY(-20%);
+                transform: translateY(-20%);
+    }
+    .citrus-nourish-right > iframe {
+        height: 300px;
+        width: 100%;
+    }
+    .citrus-amazing-grains-area {
+        padding-top: 40px;
+        padding-bottom: 42px;
+    }
+    .citrus-mm-content > h3 {
+        width: 60%;
+    }
+    .citrus-mm-content > p {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .citrus-meet-orijen-main21 {
+        width: 500%;
+    }
+    .citrus_item_section__tab_content_item {
+        max-width: 195px;
+    }
+    .citrus-transitioning-content {
+        padding-top: 31px;
+        padding-bottom: 25px;
+    }
+    .citrus-transitioning-content > h4 {
+        padding-bottom: 15px;
+    }
+
+    /*banner slider css*/
+
+    .citrus-banner-inner-right > h2, .citrus-innx-content > h2 {
+        width: 58%;
+        margin: 0 auto;
+        line-height: 1;
+    }
+    .citrus-banner-middle-content-inner {
+        padding-top: 100px;
+    }
+    .citrus-banner-inner-right > p, .citrus-innx-content > p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .citrus_orijin-navigation-auto {
+        left: 35%;
+    }
+    .citrus_orijin-navigation-manual {
+        left: 35%;
+    }
+
+    .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content {
+        padding-left: 0px;
+    }
+
+    .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content h2 {
+        width: 84%;
+    }
+
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-mobile-view .citrus-banner-inner-right.citrus-banner-inner-right2 {
+        padding-top: 185px;
+    }
+    .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content p {
+        padding-bottom: 0px;
+        padding-top: 0;
+    }
+    .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content .citrus-banner-btn > a {
+        color: #001952;
+        text-transform: capitalize;
+        display: block;
+        margin-top: 8px;
+    }
+    .citrus-banner-middle-content-inner3 .citrus-banner-inner-right h2 {
+        line-height: 1.1;
+        width: 100%;
+    }
+
+    .citrus-orgin-single > h5 {
+        font-size: 15px;
+    }
 
 }
 
+
+
+@media all and (max-width: 413px) {
+    .citrus-origins-single-item {
+        max-width: 180px;
+    }
+    .citrus-common-header.citrus-common-header2 > h2 {
+        width: 78%;
+    }
+    .citrus-common-header > p {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .citrus-wet-single-item > p {
+        height: 100px;
+    }
+    .citrus-transitioning-content > p {
+        width: 99%;
+    }
+
+    /*slider css*/
+    .citrus-banner-inner-right > h2, .citrus-innx-content > h2 {
+        width: 64%;
+    }
+
+    .citrus-banner-middle-content-inner {
+        padding-top: 80px;
+    }
+
+    .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content h2 {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .citrus-banner-slider-desktop-view22.citrus-banner-slider-mobile-view .citrus-banner-inner-right.citrus-banner-inner-right2 {
+        padding-top: 170px;
+    }
+    .citrus-banner-inner-right > p, .citrus-innx-content > p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+}
 
 
 @media all and (max-width: 374px) {
+    .citrus-banner-inner-right > h2, .citrus-innx-content > h2 {
+        width: 90%;
+    }
+
+    .citrus-banner-inner-right > p, .citrus-innx-content > p {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content h2 {
+        font-size: 18px;
+    }
+    .citrus-banner-middle-content-inner > img, .citrus-banner-inner-right2 > img {
+        width: 60px;
+        height: auto;
+        display: block;
+        margin-bottom: 6px;
+    }
+    .citrus-mm-content > h3 {
+        width: 70%;
+    }
+    .citrus-orgins-btm-content > h4 {
+        font-size: 18px;
+    }
+
 
 }
-
 
