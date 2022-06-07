@@ -1190,11 +1190,8 @@
             setInterval(function () {
                 document.getElementById('radio' + counter).checked = true;
                 counter++;
-                // if (counter > 3) {
-                //     counter = 1;
-                // }
-                for($x = 0; $x <= 3; $x++){
-                    $x++;
+                if (counter > 3) {
+                    counter = 1;
                 }
             }, 5000);
         </script>
