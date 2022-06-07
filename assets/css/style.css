@@ -668,9 +668,12 @@ a:hover {
     }
     #radio2:checked ~ .citrus_splidefirst{
         margin-left : -100%;
+         transition: 2s;
     }
     #radio3:checked ~ .citrus_splidefirst{
         margin-left : -200%;
+        transition: 2s;
+       
     }
 
    .citrus_orijin-navigation-auto {
