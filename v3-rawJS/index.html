@@ -592,118 +592,7 @@
                     /**************************************/
             /************ Slider section *************/
             /************************************/
-            .citrus-orijien-section__slider {
-                        overflow: hidden;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        align-items: center;
-                        width: 100%;
-                        position: relative;
-                    }
-            
-                     .citrus-orijien-section__slider input {
-                        display: none;
-                    }
-            
-                     .citrus_splide_banner_orijin {
-                        width: 300%;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                    }
-            
-            
-            
-             /****slider styles****/
-                   
-                 
-                  
-            
-                /* Manual navigation */
-                .citrus_orijin-navigation-manual{
-                    position: absolute;
-                    width: 100%;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                            justify-content: center;
-                    bottom: 0;
-                    padding: 10px 0 10px;
-                    width: 100px;
-                    left: calc(50% - 75px );
-                }
-            
-                .citrus_orijin-manual-btn{
-                    padding : 8px;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    -webkit-transition: 1s;
-                    -o-transition: 1s;
-                    transition: 1s;
-            
-                }
-            
-                .citrus_orijin-manual-btn:not(:last-child){
-                    margin-right: 10px;
-                }
-            
-            
-                #radio1:checked ~ .citrus_splidefirst{
-                    margin-left : 0;
-                }
-                #radio2:checked ~ .citrus_splidefirst{
-                    margin-left : -100%;
-                     transition: 2s;
-                }
-                #radio3:checked ~ .citrus_splidefirst{
-                    margin-left : -200%;
-                    transition: 2s;
-                   
-                }
-            
-               .citrus_orijin-navigation-auto {
-                position: absolute;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                bottom: 0;
-                background: transparent;
-                padding: 10px 0 10px;
-                width: 100px;
-                left: calc(50% - 75px );
-                border-radius: 5px 5px 0 0;
-            }
-            
-                .citrus_orijin-navigation-auto div {
-                padding: 8px;
-                border-radius: 10px;
-                -webkit-transition: 1s;
-                -o-transition: 1s;
-                transition: 1s;
-                background: #B1B1B1;
-            }
-            
-                .citrus_orijin-navigation-auto div:not(:last-child){
-                    margin-right: 10px;
-                }
-            
-                #radio1:checked ~ .citrus_orijin-navigation-auto .auto-btn1{
-                    background: #fff;
-                }
-                #radio2:checked ~ .citrus_orijin-navigation-auto .auto-btn2{
-                    background: #fff;
-                }
-                #radio3:checked ~ .citrus_orijin-navigation-auto .auto-btn3{
-                    background: #fff;
-                }
+
 
 .citrus_orijen_carousel{
     overflow-x: hidden;
@@ -770,17 +659,15 @@
 
 .citrus_orijen_carousel-indicators span{
     display: inline-block;
-    background-color: white;
-    width: 30px;
-    height: 4px;
-    border-radius: 2px;
-    opacity: .5;
+    background-color: #b1b1b1;
+    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
-    margin: 3px;
+    margin: 0 5px;
 }
 
 .citrus_orijen_carousel-indicators span.active{
-    opacity: 1;
+    background-color: #fff;
 }
             
                     /****slider styles****/
@@ -859,7 +746,7 @@
                 font-size: 16px;
                 font-family: "PetcoCircularTT-Regular", arial !important;
                 font-weight: 400;
-                width: 60%;
+                width: 70%;
                 line-height: 1.3;
                 display: block;
                 padding-bottom: 25px;
@@ -1899,6 +1786,10 @@
                 .citrus-wet-single-item > a > img {
                     width: 100%;
                 }
+
+                /* .citrus-banner-inner-right > p, .citrus-innx-content > p{
+                    max-width: 220px;
+                } */
             
             
             }
@@ -3660,7 +3551,7 @@
 
                     let jump = 1;
 
-                    let interval = 4000;
+                    let interval = 8000;
 
                     let time;
 
