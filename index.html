@@ -2380,7 +2380,7 @@
                <div class="citrus-orijien-section__slider">
                  <div class="citrus-slider-items citrus_splide_banner_orijin">
                    <!-- Radio buttons -->
-                   <input type="radio" name="radio-btn" id="radio1">
+                   <input type="radio" checked="checked" name="radio-btn" id="radio1">
                    <input type="radio" name="radio-btn" id="radio2">
                    <input type="radio" name="radio-btn" id="radio3">
                    
@@ -3525,14 +3525,14 @@
          
                  <script>
                      //slider script
-                     let counter = 1;
-                     setInterval(function () {
-                         document.getElementById('radio' + counter).checked = true;
-                         counter++;
-                         if (counter > 3) {
-                             counter = 1;
-                         }
-                     }, 5000);
+                    let counter = 1;
+                    setInterval(function () {
+                        counter++;
+                        document.getElementById('radio' + counter).checked = true;
+                        if (counter == 3) {
+                            counter = 0;
+                        }
+                    }, 5000);
                  </script>
          
          
