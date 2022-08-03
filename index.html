@@ -245,6 +245,7 @@
 
 
 
+
         .way-container {
             max-width: 1246px;
             width: 100%;
@@ -279,7 +280,7 @@
             display: -ms-flexbox;
             display: -webkit-box;
             display: flex;
-            height: 100%;
+            height:auto !important;
             margin: 0 !important;
             padding: 0 !important;
             -webkit-transform-style: preserve-3d;
@@ -304,6 +305,11 @@
             justify-content: center;
             margin: 0;
             pointer-events: none;
+        }
+
+        .splide__slide img {
+            width: 100%;
+            height: auto;
         }
 
         .splide__pagination li {
@@ -825,7 +831,7 @@
             transform: translate(-20%, -50%);
         }
 
-        .citrus-slider-single-item {
+        .citrus-slider-single-item  splide__slide {
             position: relative;
         }
 
@@ -1687,7 +1693,7 @@
             }
 
             .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content {
-                margin-left: -185px;
+                margin-left: -100px;
             }
 
 
@@ -1695,6 +1701,10 @@
 
 
         @media all and (min-width: 992px) and (max-width:1280px) {
+            .citrus-banner-btn>a, .citrus-innx-content>a {
+                font-size: 12px;
+                padding: 10px 30px;
+            }
             .citrus-slider-banner-content {
                 -webkit-box-align: center;
                 -ms-flex-align: center;
@@ -2626,16 +2636,16 @@
         <section class="citrus-banner-area">
             <div class="citrus-slideshow-container">
                 <!-- slider desktop view -->
-                <div class="citrus-banner-slider-desktop-view22 citrus-banner-slider-desktop-view">
-                    <div class="citrus-orijien-section__slider">
-                        <div class="citrus-slider-items citrus_splide_banner_orijin">
+                <div id="citrus-carousel" class="citrus-banner-slider-desktop-view22 citrus-banner-slider-desktop-view splide">
+                    <div class="citrus-orijien-section__slider splide__track">
+                        <div class="citrus-slider-items splide__list citrus_splide_banner_orijin ">
                             <!-- Radio buttons -->
-                            <input type="radio" checked="checked" name="radio-btn" id="radio1">
+                            <!-- <input type="radio" checked="checked" name="radio-btn" id="radio1">
                             <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio3"> -->
 
                             <!-- single item -->
-                            <div class="citrus-slider-single-item citrus_orijinSlide citrus_splidefirst">
+                            <div class="citrus-slider-single-item  splide__slide citrus_orijinSlide citrus_splidefirst">
                                 <img class="citrus_mobile-hide" src="assets/images/banner_img1.png"
                                     alt="Orijen logo. Image of a cat. Image of a man walking on rocks with a dog following behind him." />
                                 <img class="citrus_desktop-hide" src="assets/images/img_mobile1.png"
@@ -2662,7 +2672,7 @@
                             <!-- single item -->
 
                             <!-- single item -->
-                            <div class="citrus-slider-single-item citrus-slider-single-item2 citrus_orijinSlide">
+                            <div class="citrus-slider-single-item  splide__slide citrus-slider-single-item2 citrus_orijinSlide">
                                 <img class="citrus_mobile-hide" src="assets/images/banner_img2.png"
                                     alt="Amazing Grains logo. Orijen logo. Pack shots of two Amazing Grains bags." />
                                 <img class="citrus_desktop-hide" src="assets/images/img_mobile2.png"
@@ -2686,7 +2696,7 @@
                             <!-- single item -->
 
                             <!-- single item -->
-                            <div class="citrus-slider-single-item citrus-slider-single-item3 citrus_orijinSlide">
+                            <div class="citrus-slider-single-item  splide__slide citrus-slider-single-item3 citrus_orijinSlide">
                                 <img class="citrus_mobile-hide" src="assets/images/banner_img3.png"
                                     alt="Orijen logo. A cat walking across a tree." />
                                 <img class="citrus_desktop-hide" src="assets/images/img_mobile3.png"
@@ -4251,14 +4261,32 @@
 
     <script>
         //slider script
-        let counter = 1;
-        setInterval(function () {
-            counter++;
-            document.getElementById('radio' + counter).checked = true;
-            if (counter == 3) {
-                counter = 0;
-            }
-        }, 5000);
+        // let counter = 1;
+        // setInterval(function () {
+        //     counter++;
+        //     document.getElementById('radio' + counter).checked = true;
+        //     if (counter == 3) {
+        //         counter = 0;
+        //     }
+        // }, 5000);
+
+          document.addEventListener('DOMContentLoaded', function () {
+                new Splide('#citrus-carousel', {
+                    rewind: true,
+                    type: 'slide',
+                    autoplay: false,
+                    rewindSpeed: 500,
+                    pauseOnHover: true,
+                    arrows: false,
+                    pagination: true,
+                    drag: true,
+                    speed: 1000,
+                    // rewindSpeed: 0,
+                    perPage: 1,
+
+                }).mount();
+            });
+
     </script>
 
 
