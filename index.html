@@ -292,19 +292,15 @@
         }
 
         .splide__pagination {
-            -ms-flex-align: center;
-            -webkit-box-align: center;
-            align-items: center;
-            display: -ms-flexbox;
-            display: -webkit-box;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            -ms-flex-pack: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            margin: 0;
-            pointer-events: none;
+
+            position: absolute;
+            bottom: 0;
+            left: calc(100%/2 - 52px);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px 5px 0 0;
+            padding: 10px 10px 5px;
+
         }
 
         .splide__slide img {
@@ -316,7 +312,7 @@
             display: inline-block;
             line-height: 1;
             list-style-type: none;
-            margin: 0;
+            margin: 0 0 10px 0;
             pointer-events: auto;
         }
 
@@ -496,37 +492,26 @@
             right: 1em;
         }
 
-        .splide__pagination {
+        /* .splide__pagination {
             bottom: 0.5em;
             left: 0;
             padding: 0 1em;
             position: absolute;
             right: 0;
             z-index: 1;
-        }
+        } */
 
         .splide__pagination__page {
-            background: #ccc;
-            border: 0;
-            border-radius: 50%;
-            display: inline-block;
-            height: 8px;
-            margin: 3px;
-            opacity: 0.7;
-            padding: 0;
-            -webkit-transition: -webkit-transform 0.2s linear;
-            transition: -webkit-transform 0.2s linear;
-            -o-transition: transform 0.2s linear;
-            transition: transform 0.2s linear;
-            transition: transform 0.2s linear, -webkit-transform 0.2s linear;
-            width: 8px;
+           display: inline-block;
+            border: 2px solid #09205c;
+            padding: 7px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 0 5px;
         }
 
         .splide__pagination__page.is-active {
-            background: #fff;
-            -webkit-transform: scale(1.4);
-            -ms-transform: scale(1.4);
-            transform: scale(1.4);
+            background: #09205c;
         }
 
         .splide__pagination__page:hover {
@@ -788,6 +773,30 @@
 
         #radio3:checked~.citrus_orijin-navigation-auto .auto-btn3 {
             background: #fff;
+        }
+
+
+        .citrus_pureBites_carousel-indicators{
+            position: absolute;
+            bottom: 0;
+            left: calc(100%/2 - 52px);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px 5px 0 0;
+            padding: 10px 10px 5px;
+        }
+
+        .citrus_pureBites_carousel-indicators span{
+            display: inline-block;
+            border: 2px solid #09205c;
+            padding: 7px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .citrus_pureBites_carousel-indicators span.active{
+            background-color: #09205c;
         }
 
         /****slider styles****/
@@ -1869,8 +1878,18 @@
             }
 
 
+            .splide__pagination {
+                 padding: 5px;
+                 left: calc(100%/2 - 40px);
+            }
 
+            .splide__pagination li {
+                margin: 0 0 2px 0;
+            }
 
+            .splide__pagination__page {
+                padding: 5px;
+            }
 
 
 
@@ -2503,10 +2522,10 @@
             }
 
             .citrus-banner-inner-right.citrus-banner-inner-right2 .citrus-innx-content .citrus-banner-btn>a {
-                color: #001952;
+                color: #fff;
                 text-transform: capitalize;
                 display: block;
-                margin-top: 8px;
+                margin-top: -30px;
             }
 
             .citrus-banner-middle-content-inner3 .citrus-banner-inner-right h2 {
